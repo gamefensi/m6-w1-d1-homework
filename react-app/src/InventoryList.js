@@ -13,7 +13,7 @@ class InventoryList extends Component {
         };
     }
     componentDidMount() {
-        this.setState({isLoading: true})
+        this.setState({isLoading: true});
 
         fetch('api/inventories')
             .then(response => response.json())
